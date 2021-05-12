@@ -3,12 +3,9 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Sidebar from '../Sidebar'
 import { useEffect } from "react"
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import Menu from '@material-ui/core/Menu'
@@ -18,20 +15,18 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    color: theme.palette.secondary.main,
+    flexGrow: 1
   },
   title: {
     flexGrow: 1
   },
   link: {
     textDecoration: 'none',
-    color: theme.palette.secondary.main
+    color: 'black'
   },
   appBar: {
-    marginBottom: 4
+    marginBottom: 4,
+    backgroundColor: '#f8dbaf'
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -47,10 +42,6 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: theme.mixins.toolbar,
 }))
-
-const handleLogOut = event => {
-  localStorage.removeItem('username', 'password', 'user')
-}
 
 
 const Navbar = (props) => {
@@ -81,7 +72,7 @@ const Navbar = (props) => {
     <div className={classes.root}>
       <AppBar position="sticky" className={classes.appBar}>
         <Toolbar variant='dense'>
-          <IconButton
+          {/* <IconButton
             edge='start'
             className={classes.menuButton}
             color='inherit'
@@ -89,7 +80,7 @@ const Navbar = (props) => {
             onClick={handleDrawerToggle}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           {matches ?
             <Typography variant='h6' className={classes.title}>
               <Link to='/' className={classes.link}>
@@ -99,7 +90,7 @@ const Navbar = (props) => {
                 to={`/portfolio`}
                 className={classes.link}
               >
-                <Button color='inherit'>Portfolio</Button>
+                <Button color='inherit'>Work</Button>
               </Link>
               <Link
                 to={`/contact`}
@@ -146,9 +137,6 @@ const Navbar = (props) => {
               </Menu>
             </>
           }
-          <Link to='/login' className={classes.link}>
-            <Button onClick={handleLogOut} color='inherit'>Sign Out</Button>
-          </Link>
         </Toolbar>
       </AppBar>
 
@@ -167,8 +155,6 @@ const Navbar = (props) => {
             keepMounted: true, // Better open performance on mobile.
           }}
         >
-          {/* THis is where the sidebar component is added */}
-          <Sidebar handleDrawerToggle={handleDrawerToggle} />
         </Drawer>
       </nav>
     </div>

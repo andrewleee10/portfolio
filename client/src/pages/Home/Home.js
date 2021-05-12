@@ -1,7 +1,6 @@
 import './Home.css'
 import img from './images/me.jpg'
 import img1 from './images/me1.jpeg'
-import Footer from '../../components/Footer'
 
 
 const Home = () => {
@@ -32,7 +31,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

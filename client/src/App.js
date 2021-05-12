@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import Home from '../public/Home'
+import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import AppBar from './components/AppBar'
@@ -16,13 +16,13 @@ function App() {
       <div>
         <AppBar />
         <Switch>
-          <Route exact path='/react-portfolio/'>
+          <Route exact path='/portfolio/home'>
             <Home />
           </Route>
-          <Route path='/react-portfolio/portfolio'>
+          <Route path='/portfolio/portfolio'>
             <Portfolio />
           </Route>
-          <Route path='/react-portfolio/contact'>
+          <Route path='/portfolio/contact'>
             <Contact />
           </Route>
           <Footer />

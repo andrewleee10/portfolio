@@ -6,8 +6,9 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
   title: {
     textDecoration: 'none',
-    color: theme.palette.secondary.main,
-    marginTop: 6,
+    color: 'black',
+    backgroundColor: '#f8dbaf',
+    marginTop: 6
   },
 }))
 

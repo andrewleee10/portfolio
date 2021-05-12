@@ -1,1 +1,1 @@
-export { default } from './Home.js.js'
+export { default } from './Home.js'
