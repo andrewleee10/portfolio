@@ -10,6 +10,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#f8dbaf',
     marginTop: 6
   },
+  footer: {
+    marginTop: 6,
+    bottom: 0
+}
 }))
 
 const githubUrl = 'https://github.com/andrewleee10'

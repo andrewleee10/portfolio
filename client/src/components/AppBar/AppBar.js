@@ -72,15 +72,6 @@ const Navbar = (props) => {
     <div className={classes.root}>
       <AppBar position="sticky" className={classes.appBar}>
         <Toolbar variant='dense'>
-          {/* <IconButton
-            edge='start'
-            className={classes.menuButton}
-            color='inherit'
-            aria-label='menu'
-            onClick={handleDrawerToggle}
-          >
-            <MenuIcon />
-          </IconButton> */}
           {matches ?
             <Typography variant='h6' className={classes.title}>
               <Link to='/' className={classes.link}>
