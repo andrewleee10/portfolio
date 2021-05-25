@@ -6,7 +6,6 @@ import Button from '@material-ui/core/Button'
 import Drawer from '@material-ui/core/Drawer'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useEffect } from "react"
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'

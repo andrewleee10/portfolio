@@ -45,10 +45,10 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Boardom
+                    Boardom Fighters
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    Boardom is a front-end javascript application that allows users to get information on any board game using a board game API. 
+                    Boardom Fighters is a front-end javascript application that allows users to get information on any board game using a board game API. 
                   </Typography>
                 </CardContent>
               </CardActionArea>
