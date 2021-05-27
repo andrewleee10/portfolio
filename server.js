@@ -15,5 +15,5 @@ app.get('*', (req, res) => {
 })
 
 require('./db')
-  .then(() => app.listen(process.env.PORT || 3001))
+  .then(() => app.listen(process.env.PORT || 3000))
   .catch(err => console.log(err))
