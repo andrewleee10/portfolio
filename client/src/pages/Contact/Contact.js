@@ -40,25 +40,28 @@ const useStyles = makeStyles((theme) => ({
 const Contact = () => {
   const classes = useStyles()
 
-  const [contact, setContact] = useState({
+  const [contactState, setContactState] = useState({
     name: '',
     email: '',
-    message: '',
-    contacts: []
+    message: ''
   })
 
   const handleInputChange = ({ target }) => {
-    setContact({ ...contact, name: '', email: '', message: '' })
+    setContactState({ ...contactState, [target.name]: target.value })
   }
 
   const handleContact = event => {
     event.preventDefault()
 
-    ContactAPI.createContact()
-      .then(({ data: contact }) => {
-        const contacts = [...contact.contacts]
-        contacts.push(contact)
-        setContact({...contact, contacts, name: '', email: '', message: ''})
+    const newContact = {
+      name: contactState.name,
+      email: contactState.email,
+      message: contactState.message
+    }
+    ContactAPI.createContact(newContact)
+      .then(({ data }) => {
+        console.log(data)
+
       })
       .catch(err => console.log(err))
 
@@ -85,10 +88,18 @@ const Contact = () => {
         <Grid item sm={12}>
           <form onSubmit={handleContact} className={classes.root} noValidate autoComplete="off">
             <div>
-              <TextField onChange={handleInputChange} id="standard-basic" label="Name" />
+              <TextField 
+                value={contactState.name.value} 
+                onChange={handleInputChange} 
+                id="standard-basic" 
+                label="Name" />
             </div>
             <div>
-              <TextField onChange={handleInputChange} id="standard-basic" label="Email" />
+              <TextField 
+                id="standard-basic" 
+                label="Email"
+                value={contactState.email.value} 
+                onChange={handleInputChange} />
             </div>
             <div className={classes.textForm}>
               <TextField
@@ -98,12 +109,13 @@ const Contact = () => {
                 label="Leave a message!"
                 variant="outlined"
                 fullWidth={true}
+                value={contactState.message.value}
                 onChange={handleInputChange}
               />
             </div>
             <div className={classes.submit}>
-              <Button onClick={handleContact} className={classes.submit} variant="outlined" color="primary">
-                Primary
+              <Button onClick={(event) => handleContact(event)} className={classes.submit} variant="outlined" color="primary">
+                Submit
               </Button>
             </div>
           </form>

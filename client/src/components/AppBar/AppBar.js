@@ -82,12 +82,12 @@ const Navbar = (props) => {
               >
                 <Button color='inherit'>Work</Button>
               </Link>
-              <Link
+              {/* <Link
                 to={`/contact`}
                 className={classes.link}
               >
                 <Button color='inherit'>Contact</Button>
-              </Link>
+              </Link> */}
             </Typography>
             :
             <>
@@ -117,12 +117,12 @@ const Navbar = (props) => {
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
-                  <Link
+                  {/* <Link
                     to={`/contact`}
                     className={classes.link}
                   >
                     <Button color='inherit'>Contact</Button>
-                  </Link>
+                  </Link> */}
                 </MenuItem>
               </Menu>
             </>
