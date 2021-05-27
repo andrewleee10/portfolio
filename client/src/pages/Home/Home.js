@@ -75,7 +75,7 @@ const Home = () => {
         >
           <Grid item xs={12}>
             <Typography>
-              Hello World! My name is Andrew Lee and I am currently 23 years old. I graduated from the University of California, Riverside in 2020 with a degree in mechanical engineering.
+              Hello World! My name is Andrew Lee and I am currently 23 years old. I am a recent coding bootcamp graduate with skills in JavaScript, HTML, CSS, and more!
             </Typography>
           </Grid>
         </Grid>
@@ -91,9 +91,7 @@ const Home = () => {
         >
           <Grid item xs={12}>
             <Typography>
-              I am currently studying to become a web developer because I have always been intrigued with the process of
-              building and creating. I hope one day I can combine my knowledge of web development with engineering.
-              Some of my favorite pastimes are making music, gaming with friends, and watching a good movie.
+              With a background in engineering, I enjoy the creative process of building anything whether it's physical or digital! The main stack I use for my work is MERN! Feel free to check out my work in the 'WORKS' tab!
             </Typography>
           </Grid>
         </Grid>
