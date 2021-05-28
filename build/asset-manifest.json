@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.96f26768.chunk.css",
+    "main.js": "/portfolio/static/js/main.664e637c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.664e637c.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.c47e4605.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c47e4605.js.map",
+    "static/js/2.30f514b9.chunk.js": "/portfolio/static/js/2.30f514b9.chunk.js",
+    "static/js/2.30f514b9.chunk.js.map": "/portfolio/static/js/2.30f514b9.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.96f26768.chunk.css.map": "/portfolio/static/css/main.96f26768.chunk.css.map",
+    "static/js/2.30f514b9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.30f514b9.chunk.js.LICENSE.txt",
+    "static/media/andrew.d5f2929b.png": "/portfolio/static/media/andrew.d5f2929b.png",
+    "static/media/birdBook.389353a0.png": "/portfolio/static/media/birdBook.389353a0.png",
+    "static/media/logo_3.fd70a80c.png": "/portfolio/static/media/logo_3.fd70a80c.png",
+    "static/media/me.3ef7ef87.jpg": "/portfolio/static/media/me.3ef7ef87.jpg",
+    "static/media/me1.5034a44f.jpeg": "/portfolio/static/media/me1.5034a44f.jpeg",
+    "static/media/weekndrLogo.55476c74.png": "/portfolio/static/media/weekndrLogo.55476c74.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c47e4605.js",
+    "static/js/2.30f514b9.chunk.js",
+    "static/css/main.96f26768.chunk.css",
+    "static/js/main.664e637c.chunk.js"
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "http://andrewleee10.github.io/portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,8 +11,12 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.12.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*' \" \"npm run client\"",
@@ -28,6 +33,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andrewleee10/portfolio/issues"
-  },
-  "homepage": "https://github.com/andrewleee10/portfolio#readme"
+  }
 }
